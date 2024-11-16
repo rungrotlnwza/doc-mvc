@@ -1,0 +1,23 @@
+/* เริ่มต้น ปิดสไตล์ปุ่มในหน้าจอขนาดเล็ก */
+
+.navbar-nav .nav-link.btn {
+    display: inline-block;
+    width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    color: var(--bs-body-color);
+}
+
+
+/* เมื่อหน้าจอใหญ่ขึ้น ตั้งแต่ขนาด lg (992px) ขึ้นไป */
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-link.btn {
+        /* ใช้สไตล์ปุ่มปกติของ Bootstrap */
+        display: inline-block;
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.25rem;
+    }
+}
