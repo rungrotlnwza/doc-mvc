@@ -9,9 +9,9 @@ $viewPath = 'view/' . $page . '.html'; // สร้าง path สำหรั�
 
 // ตรวจสอบว่ามีไฟล์อยู่จริงหรือไม่
 if (file_exists($viewPath)) {
-    include 'view/header.php';
+    include 'view/include/header.php';
     include $viewPath; // ถ้ามีให้โหลดไฟล์ที่ตรงกัน
-    include 'view/footer.php';
+    include 'view/include/footer.php';
 
 } else {
     include 'view/404.html'; // ถ้าไม่มีให้โหลดหน้า 404
