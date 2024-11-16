@@ -18,5 +18,5 @@ if (strpos($requestUri, 'api/') === 0) {
     include 'route/Route_API.php'; // โหลด Route_API หากเป็น API route
 } else {
     include 'route/Route_Page.php'; // โหลด Route_Page สำหรับหน้าเว็บ
-}
+};
 ?>
