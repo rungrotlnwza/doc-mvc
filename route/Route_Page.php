@@ -2,7 +2,7 @@
 // Route_Page.php
 
 // กำหนด page ตาม URI
-$page = empty($requestUri) ? '/' : $requestUri; // หากไม่มีการระบุหน้า ให้กำหนดเป็น 'home'
+$page = empty($requestUri) ? 'index' : $requestUri; // หากไม่มีการระบุหน้า ให้กำหนดเป็น 'index'
 
 // กำหนด path สำหรับ views
 $viewPath = 'view/' . $page . '.html'; // สร้าง path สำหรับไฟล์ที่ต้องการโหลด
