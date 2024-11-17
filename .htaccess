@@ -1,4 +1,10 @@
 RewriteEngine On
+
+# กำหนดให้คำขอที่เริ่มต้นด้วย api/ ส่งไปที่ Route_API.php
+RewriteCond %{REQUEST_URI} ^/api/
+RewriteRule ^api/(.*)$ route/Route_API.php?route=$1 [QSA,L]
+
+# คำขออื่นส่งไปที่ index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [L]
